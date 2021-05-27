@@ -111,3 +111,25 @@
 //	}
 //	printf("m=%d,n=%d\n", m, n);//m=5，n=3
 //}
+
+
+//break在while循环中的作用
+//其实在循环中只要遇到break，就停止后期的所有循环，直接终止循环，所以：while中的break是用于永久终止循环的。
+
+
+//continue是用于终止本次循环的，也就是本次循环中continue后边的代码不会再执行，而是直接跳转到while语句的判断部分。进行下一次循环的入口判断。
+
+
+//int main()
+//{
+//	int ch = 0;
+//	//ctrl+z,才能使getchar()接收到EOF
+//	//EOF-end of file-> -1
+//	while ((ch = getchar())!=EOF)//getchar()--接受键盘的字符
+//		putchar(ch);//将ch这个字符在键盘上打印出来
+//	return 0;
+//}
+
+
+//while（条件）
+//语句；     ---表示只要满足这个条件就一直循环下去。区别于if语句，if（条件）意味着只要满足这个条件就执行一次if下面的语句。
