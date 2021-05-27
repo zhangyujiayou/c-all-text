@@ -1,5 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include<stdlib.h>
 
 //int main()
 //{
@@ -139,4 +142,119 @@
 //	return 0;
 //}
 //在好好理解理解。有点晕，需要再看。
+
+//写一个代码，在arr数组（有序数组）中找到7
+//int main()
+//{
+//	int arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+//	int k = 7;
+//	int se = 0;
+//	int i = 0;
+//	//首先计算出数组的元素个数
+//	se = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < se; i++)
+//	{
+//		if (3 == arr[i])
+//		{
+//		   printf("找到了,下标是%d\n",i);
+//		   break;
+//	    }
+//	}
+//	if (i == se)
+//		printf("没有找到\n");
+//	return 0;
+//}
+
+
+//二分数查找法查找元素的方法。
+//int main()
+//{
+//	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int k = 6;
+//	int se = sizeof(arr) / sizeof(arr[0]);//计算元素的个数
+//	int left = 0;//左下标
+//	int right = se-1;//右下标
+//	
+//	
+//	while (left<=right)
+//	{
+//		int mid = (left + right) / 2;//中间元素的下标
+//		if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else if (arr[mid] > k)
+//		{	
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			printf("找到了，下标是%d\n", mid);
+//			break;
+//		}
+//
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到\n");
+//	}
+//	return 0;
+//}
+
+
+//满足一个条件去打印一串字符
+//welcome to bit!!!!!!!
+//w###################!
+//we#################!!
+//wel###############!!!
+//........
+//........
+//welcome to bit!!!!!!!
+
+
+//int main()
+//{
+//	char arr1[] = "welcome to bit!!!!!!!";
+//	char arr2[] = "#####################";
+//	int left = 0;//左下标
+//	int se = strlen(arr1);//统计的字节个数
+//	int right = se - 1;//右下标
+//
+//	while (left<=right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(500);//Sleep--延时函数，括号里面表示延迟的时间，单位是ms，这个需要注意，S是大写，并且需要添加头函数#include<windows.h>
+//		system("cls");//system--执行系统命令的一个函数，cls--清屏指令，需要打招呼添加头函数#include<stdlib.h>
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+
+//编写代码实现，模拟用户的登录场景，并且只能登入3次。
+//只允许输入3次密码，如果密码正确就提示登入成功，如果3次均输入错误，则退出程序。
+//int main()
+//{
+//	char password[] = { 0 };
+//	int i;
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("请输入密码：");
+//		scanf("%s", password);
+//		if (strcmp(password, "123456") == 0)
+//		{
+//			printf("登入成功\n");
+//			break;
+//		}
+//		else
+//			printf("登入失败，请重新输入\n");
+//		    
+//	}
+//	if (i==3)
+//		printf("三次输入都错误，请稍后再试\n");
+//	return 0;
+//}
 
