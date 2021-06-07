@@ -133,3 +133,26 @@
 
 //while（条件）
 //语句；     ---表示只要满足这个条件就一直循环下去。区别于if语句，if（条件）意味着只要满足这个条件就执行一次if下面的语句。
+
+int Max(int x, int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+int main()
+{
+	int num1 = 0;
+	int num2 = 0;
+	int max = 0;
+	int i = 0;
+	scanf("%d%d", &num1, &num2);
+	max = Max(num1, num2);
+	for (i = 0; i < 100; i++)
+	{
+		printf("较大值为%d\n", max);
+		printf("次数为%d\n", i);
+	}
+	return 0;
+}
